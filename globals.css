@@ -1,0 +1,34 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-from: #06b6d4;
+  --brand-to: #8b5cf6;
+}
+html[dir="rtl"] {
+  font-family: 'Tahoma', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+.card {
+  @apply rounded-2xl border border-gray-200 bg-white shadow-sm;
+}
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 font-semibold;
+}
+.btn-primary {
+  @apply text-white;
+  background: linear-gradient(90deg, var(--brand-from), var(--brand-to));
+}
+.btn-ghost {
+  @apply border hover:bg-gray-50;
+}
+.badge {
+  @apply rounded-full px-3 py-1 text-xs font-semibold;
+}
